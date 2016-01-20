@@ -1,6 +1,6 @@
 # Todayfile
 
-Command line to create a file with the current date as the file name 
+Command line tool to create a file with the current date as the file name 
 
 ## Install
 
