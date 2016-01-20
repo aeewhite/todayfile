@@ -4,7 +4,12 @@ Command line to create a file with the current date as the file name
 
 ## Install
 
-Clone the repo then compile
+Clone the repo 
+
+```sh
+git clone https://github.com/aeewhite/todayfile.git
+```
+then compile
 
 ```sh
 make
