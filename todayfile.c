@@ -32,8 +32,10 @@ int main( int argc, char *argv[] ){
 		FILE *fp = fopen(filename,"a+");
 		fclose( fp );
 		printf("%s\n",filename);
+		return 0;
 	}
 	else{
 		printf("File already exists\n");
+		return 1;
 	}
 }
