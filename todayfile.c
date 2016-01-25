@@ -31,7 +31,7 @@ int main( int argc, char *argv[] ){
 		// Create file
 		FILE *fp = fopen(filename,"a+");
 		fclose( fp );
-		printf("%s created\n",filename);
+		printf("%s\n",filename);
 	}
 	else{
 		printf("File already exists\n");
