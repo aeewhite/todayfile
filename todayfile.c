@@ -26,9 +26,9 @@ int main( int argc, char *argv[] ){
 
 	// Check if file already exists
 	struct stat sb;
-	int fileExists = stat(filename,&sb);
+	int fileDoesntExist = stat(filename,&sb);
 
-	if(fileExists){
+	if(fileDoesntExist){
 		// Create file
 		FILE *fp = fopen(filename,"a+");
 		fclose( fp );
