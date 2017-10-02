@@ -14,7 +14,13 @@ int main( int argc, char *argv[] ){
 	// Check if file extension passed
 	char extension[4];
 	if(argc > 1){
-		strcpy(extension, argv[1]);
+		if(0 == strcmp(argv[1], "-h")){
+			printf("usage: %s [options] [file extension]\n  options:\n    -h Print this help message\n", argv[0]);
+			return 0;
+		}
+		else{
+			strcpy(extension, argv[1]);
+		}
 	}
 	else{
 		strcpy(extension, "md");
